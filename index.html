@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de média</title>
+    <style>
+        body {
+            background-color: darkgray;
+            text-align: center;
+            height:100%;
+            margin: auto;
+            
+        }
+         span {
+             color: greenyellow;
+         }
+      
+
+    </style>
+</head>
+<body>
+    <h1>Calculadora de média </h1><br /><br />
+    
+    <input id="n1" type="number" placeholder="Média 1"/><br /><br />
+    
+    <input id="n2" type="number" placeholder="Média 2"/><br /><br />
+    
+    <input id="n3" type="number" placeholder="Média 3"/><br /><br />
+    
+    <input id='n4' type="number"placeholder="Média 4"/><br /><br />
+    <button onclick="fazerMedia()">Calcular média</button>
+
+    <h2>Sua média é:  <span>  </span></h2>
+    
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var n3 = document.querySelector('#n3')
+        var n4 = document.querySelector('#n4')
+        var media = 4
+        var resultado = document.querySelector('span')
+
+        function fazerMedia (){
+            resultado.innerHTML = (parseInt(n1.value) + parseInt(n2.value) + parseInt(n3.value) + parseInt(n4.value)) / media
+        }
+        
+            
+
+        
+    </script>
+
+    
+</body>
+</html>
