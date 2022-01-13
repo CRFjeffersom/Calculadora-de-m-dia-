@@ -1,2 +1,4 @@
-# Calculadora-de-m-dia-
-Calculadora básica de media entre 4 números
+Calculara de média entre 4 númerosfeita em javascript, HTML e CSS.
+use a vontade
+
+
